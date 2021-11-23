@@ -72,7 +72,7 @@ router.post("/login", async (req, res) =>{
 
     if(!user){
         return res.json({
-            error: [
+            errors: [
                 {
                   msg: 'Invalids credentials'
                 }
@@ -85,7 +85,7 @@ router.post("/login", async (req, res) =>{
 
     if(!isMatch){
         return res.json({
-            error: [
+            errors: [
                 {
                     msg: 'Invalids credentials'
                 }
